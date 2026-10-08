@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 950px;
+    margin: 40px auto;
+    background: #ffffff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADER */
+header {
+    background: #111827;
+    color: #ffffff;
+    padding: 45px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+header h2 {
+    font-size: 19px;
+    font-weight: normal;
+    color: #d1d5db;
+    margin-bottom: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 14px;
+}
+
+.contact a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 40px 45px;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+section h3 {
+    font-size: 20px;
+    color: #111827;
+    border-bottom: 2px solid #111827;
+    padding-bottom: 7px;
+    margin-bottom: 18px;
+}
+
+.summary {
+    color: #444444;
+}
+
+/* EDUCATION & EXPERIENCE */
+.item {
+    margin-bottom: 22px;
+}
+
+.item h4 {
+    font-size: 17px;
+    color: #111827;
+}
+
+.item .date {
+    font-size: 14px;
+    color: #666666;
+    margin: 3px 0 8px;
+}
+
+/* LISTS */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: #eef2f7;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* PROJECTS */
+.project {
+    padding-left: 15px;
+    border-left: 3px solid #111827;
+    margin-bottom: 18px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f3f4f6;
+    color: #666666;
+    font-size: 13px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    .container {
+        margin: 0;
+    }
+
+    header {
+        padding: 30px 25px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    main {
+        padding: 30px 25px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 7px;
+    }
+}
+
+/* PRINT */
+@media print {
+    body {
+        background: #ffffff;
+    }
+
+    .container {
+        margin: 0;
+        box-shadow: none;
+    }
+
+    header {
+        background: #ffffff;
+        color: #000000;
+    }
+
+    header h2,
+    .contact a {
+        color: #333333;
+    }
+
+    footer {
+        display: none;
+    }
+}
